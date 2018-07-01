@@ -98,7 +98,6 @@ form {
 	margin: 0 auto;
 	/*background:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)), url(../images/b-bg.jpg) repeat-y;*/
 	background:#fff;
-	background-size: cover;
 }
 
 input[type="text"] {
