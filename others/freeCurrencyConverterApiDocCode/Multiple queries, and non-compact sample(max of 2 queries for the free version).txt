@@ -1,0 +1,1 @@
+{"query":{"count":2},"results":{"USD_PHP":{"id":"USD_PHP","val":53.439999,"to":"PHP","fr":"USD"},"PHP_USD":{"id":"PHP_USD","val":0.018699,"to":"USD","fr":"PHP"}}}

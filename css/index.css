@@ -1,0 +1,207 @@
+/* All Elements */
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+*:after, *:before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	background:transparent;
+	background-size: cover;
+	margin:0;
+	overflow: hidden;
+	-webkit-perspective:100px;
+	perspective: 100px;
+}
+
+.container {
+	background:url(../images/seam-bg-bd.jpg);*/
+	display: flex;
+	max-width: 1360px;
+	border: none;
+	/* box-shadow: 0 5px 6px 0 #000; */
+	margin: 0 auto;
+	justify-content: center;
+	height: 100vh;
+}
+
+::-webkit-scrollbar {
+	width:10px;
+}
+
+::-webkit-scrollbar-track {
+	width:10px;
+	background:#f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+	background:#888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background:#555;
+}
+
+
+header {
+	background:#f5f5f5;
+	width:100%;
+	overflow: hidden;
+	text-align:center;
+	display: flex;
+	padding:0 20px;
+	border-bottom:5px solid rgb(0,255,255);
+}
+
+header h1 {
+	font-weight: 900;
+	font-family: Arial;
+	font-size:40px;
+	text-align:center;
+	color: #888;
+	padding:0 180px;
+}
+
+header img {
+	height: 100px;
+	width: 100px;
+	padding:10px;
+}
+
+table {
+	margin:0 auto;
+	padding: 0 10px;
+}
+table tr {
+
+}
+
+form {
+	height:700px;
+	width:1300px;
+	padding:0;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0 6px 50px 30px rgba(0,0,0,.4);
+	-webkit-transform-style:preserve-3d;
+	transform-style:preserve-3d;
+	-webkit-transform:scale(0.7,0.7);
+	transform:scale(0.7,0.7);
+	margin: 0 auto;
+	/*background:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)), url(../images/b-bg.jpg) repeat-y;*/
+	background:#fff;
+	background-size: cover;
+}
+
+input[type="text"] {
+	height:100px;
+	width:300px;
+	border:1px solid rgb(0,255,255);
+	margin:40px 20px;
+	font-size: 20px;
+	padding:5px;
+	text-align: center;
+}
+
+#toAmount {
+	/*box-shadow: 0 2px 5px 0 rgba(0,0,255,.7);*/
+	background:#f5f5f5;
+	border:none;
+	height: 150px;
+	position: fixed;
+	color:grey;
+	padding:9px;
+	width:auto;
+	font-size:35px;
+	line-height: 3; 
+	text-align: left;
+	float: left;
+	font-family: Arial;
+	font-weight: 100;
+	overflow: scroll;
+	margin:40px auto;
+}
+
+select{
+	background:#fff;
+	/*box-shadow: 0 2px 5px 0 rgba(0,0,255,.7);*/
+	color: #000;
+	padding: 5px;
+	height:100px;
+	margin-top: 0;
+	font-size:16px;
+	margin-right:10px;
+	margin-left:5px; 
+	text-align: ;
+	border:none;
+	border-bottom: 5px solid rgba(0,255,255,.7);
+}
+
+
+::placeholder {
+	color: grey;
+	font-weigh:100;
+	font-family: Arial;
+	font-size: 20px;
+	text-align: center;
+	padding: 15px;
+}
+
+/* fontawesome icon money */
+#icon {
+	height:20px;
+	width: 100px;
+	color: grey;
+	-webkit-transform:scale(5,4);
+	transform:scale(5,4);
+	padding: 20px 65px;
+}
+
+
+
+/* Responsiveness for screens less than 600px */
+@media screen and (max-width: 785px){
+
+	header h1 {
+		font-size:16px;
+		padding-top: 35px;
+	}
+
+	.container {
+		-webkit-transform:scale(1,1);
+		transform: scale(1,1);
+		margin: 1% auto;
+	}
+
+	form {
+		-webkit-transform:scale(0.7,0.7);
+		transform:scale(0.7,0.7);
+		width:100vw;
+		margin:50px;
+		height: auto;
+	}
+
+	select {
+		margin-top:35px;
+		width:200px;
+	}
+
+	input[type="text"]{
+		width: 200px;
+	}
+
+	table{
+		height: auto;
+		width: auto;
+	}
+
+
+}
+
+

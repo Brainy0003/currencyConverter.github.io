@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en(us)">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title> Currency Converter </title>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->    
+	<meta name="keywords" content=" " />
+	<meta name="description" content=" " /> 
+	<meta name="author" content="Precious Adeyinka" />
+	<meta name="copyright" content=" " />  
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./css/index.css" />
+
+	<style type="text/css"></style>
+
+	<!-- javascript files -->
+	<script type="text/javascript" src="./idb.js"></script>
+	<script type="text/javascript" src="./js/idb-index.js"></script>
+	<script type="text/javascript" src="./js/app/convertCurrency.js"></script>
+	<script type="text/javascript" src="./js/app/loadCurrency.js"></script>
+	<script type="text/javascript">
+	  	// Register the service worker
+		if ('serviceWorker' in navigator) {
+		  navigator.serviceWorker.register('/sw.js').then((reg) => {
+		  // Registration was successful
+		  console.log('Registration Worked!', reg.scope);
+		  }).catch(err => {
+		  // registration failed :(
+		  console.log('Registration failed!: ', err);
+		  });
+		}
+  	</script>
+
+</head>
+<body onload="loadCurrency();">
+	<div class="container">
+		<form name="Currency Converter" method="" action="">
+			<header>
+				<i id='icon' class="fa fa-money"></i>
+				<h1>CURRENCY CONVERTER</h1>
+			</header>
+			<table>
+				<tr>
+					<td>
+						<select id="currencies_1" onchange="convertCurrency();" class="currencies"></select>
+	      			</td>
+	      			<td>
+						<!-- from currency -->
+						<input id="fromAmount" type="text" placeholder="Amount" name="" onkeyup="convertCurrency();" />
+					</td>
+					<td>
+						<br>
+						<select id="currencies_2" onchange="convertCurrency();" class="currencies"></select>
+	      			</td>
+				</tr>
+				<tr>
+	      			<td>
+						<!-- to currency -->
+						<br>
+						<div id="toAmount"></div>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "Currency Converter",
+  "version": "1.0.0",
+  "description": "Converts the currency rate from one country to another.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adeyinka Precious",
+  "license": "ISC"
+}
